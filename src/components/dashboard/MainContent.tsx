@@ -1,7 +1,7 @@
 import { Sparkles, Calendar, List, Plus } from "lucide-react"
-import { Communication } from "./Communication"
 import { PersonalNotes } from "./PersonalNotes"
 import { LastCallCard } from "./LastCallCard"
+import { Communication } from "./Communication"
 
 export function MainContent() {
   return (
@@ -11,7 +11,7 @@ export function MainContent() {
         <LastCallCard />
       </div>
       {/* Intelligence Column */}
-      <div className="flex flex-col gap-5 h-full flex-1">
+      <div className="flex flex-col gap-5 h-full flex-2">
         <PersonalNotes />
 
         {/* AI-Generated Summary Card */}

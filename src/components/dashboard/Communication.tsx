@@ -70,7 +70,7 @@ export function Communication() {
     const badgeCount = Math.min(messages.length, 99)
 
     return (
-        <div className="flex min-h-0 flex-col w-[340px] max-h-[58vh] h-full shrink-0">
+        <div className="flex min-h-0 flex-col w-[340px] flex-5 shrink-0">
             <div className="flex flex-col h-full rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-[0_1px_1.75px_rgba(0,0,0,0.05)] overflow-hidden">
                 {/* Chat Header */}
                 <div className="flex items-center justify-between gap-3 px-5 py-4 w-full shrink-0">

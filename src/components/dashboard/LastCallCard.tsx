@@ -2,7 +2,7 @@ import { Phone, PhoneOutgoing } from 'lucide-react';
 
 export function LastCallCard() {
   return (
-    <div className="flex flex-col rounded-xl w-[400px] bg-[var(--card)] border border-[var(--border)] shadow-[0_1px_1.75px_rgba(0,0,0,0.05)] overflow-hidden">
+    <div className="flex flex-col flex-1 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-[0_1px_1.75px_rgba(0,0,0,0.05)] overflow-hidden w-full">
       {/* Call Header */}
       <div className="flex items-center justify-between px-4 py-3 w-full">
         <div className="flex items-center gap-2">
