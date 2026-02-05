@@ -75,10 +75,10 @@ export function Communication() {
                 {/* Chat Header */}
                 <div className="flex items-center justify-between gap-3 px-5 py-4 w-full shrink-0">
                     <div className="flex items-center gap-2">
-                        <MessageCircle className="w-4 h-4 text-[#7C9070]" />
+                        <MessageCircle className="w-4 h-4 text-[var(--color-primary-500)]" />
                         <span className="text-sm font-semibold text-[#2D2D2D]">Family Communication</span>
                     </div>
-                    <div className="flex items-center justify-center px-2 py-0.5 rounded-xl bg-[#7C9070]">
+                    <div className="flex items-center justify-center px-2 py-0.5 rounded-xl bg-[var(--color-primary-500)]">
                         <span className="text-[11px] font-semibold text-white">{badgeCount}</span>
                     </div>
                 </div>
@@ -123,13 +123,13 @@ export function Communication() {
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
                             placeholder="Escribe un mensaje..."
-                            className="flex-1 min-w-0 rounded-lg border border-[#E5E7EB] bg-white px-3 py-2 text-sm text-[#2D2D2D] placeholder:text-[#8E8E93] outline-none focus:border-[#7C9070] focus:ring-1 focus:ring-[#7C9070]"
+                            className="flex-1 min-w-0 rounded-lg border border-[#E5E7EB] bg-white px-3 py-2 text-sm text-[#2D2D2D] placeholder:text-[#8E8E93] outline-none focus:border-[var(--color-primary-500)] focus:ring-1 focus:ring-[var(--color-primary-500)]"
                             aria-label="Mensaje"
                         />
                         <button
                             type="submit"
                             disabled={!inputValue.trim()}
-                            className="flex shrink-0 items-center justify-center w-9 h-9 rounded-lg bg-[#7C9070] text-white hover:bg-[#6B7F60] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                            className="flex shrink-0 items-center justify-center w-9 h-9 rounded-lg bg-[var(--color-primary-500)] text-white hover:bg-[#6B7F60] disabled:opacity-50 disabled:cursor-not-allowed transition-colors cursor-pointer"
                             aria-label="Enviar"
                         >
                             <Send className="w-4 h-4" />

@@ -11,7 +11,7 @@ interface PersonalNotesProps {
 }
 
 export function PersonalNotes({
-  caseId = "CASE-001",
+  caseId = "ABC-123",
   sender = "user@local",
 }: PersonalNotesProps) {
   const queryClient = useQueryClient()
@@ -34,7 +34,7 @@ export function PersonalNotes({
       const trimmed = text.trim()
       if (!trimmed) return
       saveMutation.mutate({
-        case_id: caseId,
+        case_id: "ABC-123",
         text: trimmed,
         date: new Date().toISOString().slice(0, 10),
         sender,
@@ -48,11 +48,11 @@ export function PersonalNotes({
       {/* Header - fijo arriba */}
       <div className="flex shrink-0 items-center justify-between gap-3 px-5 py-4 w-full border-b border-transparent">
         <div className="flex items-center gap-2">
-          <Pencil className="w-4 h-4 text-[#7C9070]" />
+          <Pencil className="w-4 h-4 text-[var(--color-primary-500)]" />
           <span className="text-sm font-semibold text-[#2D2D2D]">Personal Notes</span>
         </div>
         <span
-          className={`text-[11px] ${saveMutation.isError ? "text-red-600" : "text-[#7C9070]"}`}
+          className={`text-[11px] ${saveMutation.isError ? "text-[var(--color-error-700)]" : "text-[var(--color-primary-500)]"}`}
         >
           {saveMutation.isError
             ? (saveMutation.error instanceof Error

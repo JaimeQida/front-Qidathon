@@ -30,7 +30,7 @@ export function Header({
       {/* Profile Section */}
       <div className="flex items-center gap-4">
         {/* Avatar */}
-        <div className="flex items-center justify-center w-12 h-12 rounded-[12px] bg-[#7C9070]">
+        <div className="flex items-center justify-center w-12 h-12 rounded-[12px] bg-[var(--color-primary-500)]">
           <span className="text-white text-lg font-semibold font-sans">
             {initials}
           </span>
@@ -70,7 +70,7 @@ export function Header({
         >
           <Phone className="w-4 h-4 text-[#6B6B6B]" />
           <span className="text-[#2D2D2D] text-[13px] font-medium font-sans">
-            Audio Call
+            Air Call
           </span>
         </button>
         <button
@@ -85,7 +85,7 @@ export function Header({
 
         <button
           onClick={onVideoCall}
-          className="flex items-center gap-2 px-5 py-[11px] rounded-[10px] bg-[#7C9070] hover:bg-[#6B7F60] transition-colors cursor-pointer"
+          className="flex items-center gap-2 px-5 py-[11px] rounded-[10px] bg-[var(--color-primary-500)] hover:bg-[#6B7F60] transition-colors cursor-pointer"
         >
           <FileText className="w-4 h-4 text-white" />
           <span className="text-white text-[13px] font-medium font-sans">

@@ -41,7 +41,7 @@ export function AddNoteArea({ onAddNote }: AddNoteAreaProps) {
         className="flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-[var(--radius-m)] bg-[var(--primary)] cursor-pointer hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <Plus className="w-4 h-4 text-[var(--primary-foreground)]" />
-        <span className="font-secondary text-[13px] font-semibold text-[var(--primary-foreground)]">
+        <span className="font-secondary text-[13px] font-semibold text-[var(--secondary-500)]">
           Add
         </span>
       </button>

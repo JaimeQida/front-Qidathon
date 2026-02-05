@@ -1,6 +1,46 @@
 @import "tailwindcss";
 
 :root {
+  --color-primary-50: #E6EDE6;
+  --color-primary-100: #B3C4C2;
+  --color-primary-200: #8AA7A4;
+  --color-primary-400: #335551;
+  --color-primary-500: #004039;
+  --color-primary-600: #003A34;
+  --color-secondary-500: #FF8A5D;
+  --color-secondary-900: #6B3A27; /* Valor del 800 en la imagen */
+
+  --color-tertiary-100: #FFFAF6;
+  --color-tertiary-200: #FFF8EE;
+  --color-tertiary-500: #FFEFDA;
+  --color-base-white: #FFFFFF;
+  --color-base-black: #000000;
+
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-200: #E5E5E5;
+  --color-neutral-300: #CCCCCC;
+  --color-neutral-400: #B3B3B3;
+  --color-neutral-500: #999999;
+  --color-neutral-600: #808080;
+  --color-neutral-700: #666666;
+  --color-neutral-800: #4D4D4D;
+  --color-neutral-900: #333333;
+  --color-neutral-900-alpha40: #33333366; /* Hex #333333 con 40% de opacidad */
+  --color-informative-50: #E6FAF9;
+  --color-informative-100: #B3EFEC;
+  --color-informative-700: #00918A;
+
+  --color-success-50: #EBF8EF;
+  --color-success-700: #0A8333;
+  --color-warning-50: #FBFAE9;
+  --color-warning-100: #F8F1B3;
+  --color-warning-300: #E7DD5D;
+  --color-warning-700: #A1941A;
+
+  --color-error-50: #FDEAEA;
+  --color-error-100: #F8BFBF;
+  --color-error-300: #F07474;
+  --color-error-700: #A82222;
   /* Design variables from .pen file */
   --accent: #F2F3F0;
   --accent-foreground: #111111;
@@ -24,7 +64,6 @@
   --muted-foreground: #666666;
   --popover: #FFFFFF;
   --popover-foreground: #111111;
-  --primary: #FF8400;
   --primary-foreground: #111111;
   --radius-m: 16px;
   --radius-none: 0px;

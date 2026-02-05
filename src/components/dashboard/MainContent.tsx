@@ -72,10 +72,10 @@ export function MainContent() {
           {/* Calendar Header */}
           <div className="flex items-center justify-between gap-3 px-5 py-4 w-full">
             <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-[#7C9070]" />
+              <Calendar className="w-4 h-4 text-[var(--color-primary-500)]" />
               <span className="text-sm font-semibold text-[#2D2D2D]">February 2026</span>
             </div>
-            <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#7C9070]">
+            <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--color-primary-500)]">
               <Plus className="w-3.5 h-3.5 text-white" />
               <span className="text-xs font-medium text-white">Add Event</span>
             </button>
@@ -97,7 +97,7 @@ export function MainContent() {
               {[' ', ' ', ' ', ' ', '5', '6', '7'].map((date, index) => (
                 <div
                   key={index}
-                  className={`flex items-center justify-center h-full flex-1 ${date === '5' ? 'rounded-lg bg-[#7C9070]' : ''
+                  className={`flex items-center justify-center h-full flex-1 ${date === '5' ? 'rounded-lg bg-[var(--color-primary-500)]' : ''
                     }`}
                 >
                   <span
@@ -147,11 +147,11 @@ export function MainContent() {
           {/* Tasks Header */}
           <div className="flex items-center justify-between gap-3 px-5 py-4 w-full">
             <div className="flex items-center gap-2">
-              <List className="w-4 h-4 text-[#7C9070]" />
+              <List className="w-4 h-4 text-[var(--color-primary-500)]" />
               <span className="text-sm font-semibold text-[#2D2D2D]">Upcoming Tasks</span>
             </div>
             <div className="flex items-center justify-center px-2 py-0.5 rounded-xl bg-[rgba(124,144,112,0.08)]">
-              <span className="text-[11px] font-medium text-[#7C9070]">3 pending</span>
+              <span className="text-[11px] font-medium text-[var(--color-primary-500)]">3 pending</span>
             </div>
           </div>
 
@@ -160,7 +160,7 @@ export function MainContent() {
             <div className="flex flex-col w-full">
               {/* Task 1 */}
               <div className="flex gap-2.5 px-3 py-3 w-full border-b border-[#E5E7EB]">
-                <div className="flex items-center justify-center w-4 h-4 rounded border-2 border-[#7C9070] flex-shrink-0 mt-0.5" />
+                <div className="flex items-center justify-center w-4 h-4 rounded border-2 border-[var(--color-primary-500)] flex-shrink-0 mt-0.5" />
                 <div className="flex flex-col gap-0.5 flex-1">
                   <span className="text-sm font-medium text-[#2D2D2D]">Review project proposal</span>
                   <span className="text-xs text-[#8E8E93]">Due today at 3:00 PM</span>
@@ -169,7 +169,7 @@ export function MainContent() {
 
               {/* Task 2 */}
               <div className="flex gap-2.5 px-3 py-3 w-full border-b border-[#E5E7EB]">
-                <div className="flex items-center justify-center w-4 h-4 rounded border-2 border-[#7C9070] flex-shrink-0 mt-0.5" />
+                <div className="flex items-center justify-center w-4 h-4 rounded border-2 border-[var(--color-primary-500)] flex-shrink-0 mt-0.5" />
                 <div className="flex flex-col gap-0.5 flex-1">
                   <span className="text-sm font-medium text-[#2D2D2D]">Schedule team meeting</span>
                   <span className="text-xs text-[#8E8E93]">Tomorrow at 10:00 AM</span>
@@ -178,7 +178,7 @@ export function MainContent() {
 
               {/* Task 3 */}
               <div className="flex gap-2.5 px-3 py-3 w-full">
-                <div className="flex items-center justify-center w-4 h-4 rounded border-2 border-[#7C9070] flex-shrink-0 mt-0.5" />
+                <div className="flex items-center justify-center w-4 h-4 rounded border-2 border-[var(--color-primary-500)] flex-shrink-0 mt-0.5" />
                 <div className="flex flex-col gap-0.5 flex-1">
                   <span className="text-sm font-medium text-[#2D2D2D]">Update documentation</span>
                   <span className="text-xs text-[#8E8E93]">Feb 7, 2026</span>
