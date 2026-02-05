@@ -1,12 +1,15 @@
 import { Sparkles, Calendar, List, Plus } from "lucide-react"
 import { Communication } from "./Communication"
 import { PersonalNotes } from "./PersonalNotes"
+import { LastCallCard } from "./LastCallCard"
 
 export function MainContent() {
   return (
     <div className="flex flex-1 min-h-0 gap-6 p-6 w-full">
-      <Communication />
-
+      <div className="flex flex-col gap-5 h-full flex-1">
+        <Communication />
+        <LastCallCard />
+      </div>
       {/* Intelligence Column */}
       <div className="flex flex-col gap-5 h-full flex-1">
         <PersonalNotes />

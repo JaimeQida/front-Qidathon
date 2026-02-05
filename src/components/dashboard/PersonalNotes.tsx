@@ -3,7 +3,7 @@ import { Pencil } from "lucide-react"
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query"
 import { getNotes, createNote } from "../../services/notes"
 
-const SAVE_DELAY_MS = 500
+const SAVE_DELAY_MS = 1500
 
 interface PersonalNotesProps {
   caseId?: string

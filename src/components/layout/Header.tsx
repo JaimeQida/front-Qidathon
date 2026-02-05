@@ -73,14 +73,23 @@ export function Header({
             Audio Call
           </span>
         </button>
+        <button
+          onClick={onAudioCall}
+          className="flex items-center gap-2 px-4 py-2.5 rounded-[10px] bg-white border border-[#E5E7EB] hover:bg-gray-50 transition-colors cursor-pointer"
+        >
+          <Video className="w-4 h-4 text-[#6B6B6B]" />
+          <span className="text-[#2D2D2D] text-[13px] font-medium font-sans">
+            Video Call
+          </span>
+        </button>
 
         <button
           onClick={onVideoCall}
           className="flex items-center gap-2 px-5 py-[11px] rounded-[10px] bg-[#7C9070] hover:bg-[#6B7F60] transition-colors cursor-pointer"
         >
-          <Video className="w-4 h-4 text-white" />
+          <FileText className="w-4 h-4 text-white" />
           <span className="text-white text-[13px] font-medium font-sans">
-            Video Call
+            Generate PTI
           </span>
         </button>
       </div>
