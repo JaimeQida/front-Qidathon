@@ -7,7 +7,7 @@ export function DashboardLayout() {
     <div className="flex min-h-screen flex-col md:flex-row">
       <Sidebar />
       <div className="flex flex-1 flex-col">
-        <Header />
+        <Header initials="JD" name="John Doe" age="45 años" />
         <main className="flex-1 p-4 md:p-6">
           <Outlet />
         </main>
