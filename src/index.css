@@ -1,5 +1,62 @@
 @import "tailwindcss";
 
+:root {
+  /* Design variables from .pen file */
+  --accent: #F2F3F0;
+  --accent-foreground: #111111;
+  --background: #F2F3F0;
+  --black: #000000;
+  --border: #CBCCC9;
+  --card: #FFFFFF;
+  --card-foreground: #111111;
+  --color-error: #E5DCDA;
+  --color-error-foreground: #8C1C00;
+  --color-info: #DFDFE6;
+  --color-info-foreground: #000066;
+  --color-success: #DFE6E1;
+  --color-success-foreground: #004D1A;
+  --color-warning: #E9E3D8;
+  --color-warning-foreground: #804200;
+  --destructive: #D93C15;
+  --foreground: #111111;
+  --input: #CBCCC9;
+  --muted: #F2F3F0;
+  --muted-foreground: #666666;
+  --popover: #FFFFFF;
+  --popover-foreground: #111111;
+  --primary: #FF8400;
+  --primary-foreground: #111111;
+  --radius-m: 16px;
+  --radius-none: 0px;
+  --radius-pill: 999px;
+  --ring: #666666;
+  --secondary: #E7E8E5;
+  --secondary-foreground: #111111;
+  --sidebar: #E7E8E5;
+  --sidebar-accent: #CBCCC9;
+  --sidebar-accent-foreground: #18181b;
+  --sidebar-border: #CBCCC9;
+  --sidebar-foreground: #666666;
+  --sidebar-primary: #18181b;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-ring: #71717a;
+  --white: #FFFFFF;
+}
+
+@layer base {
+  html, body {
+    height: 100%;
+  }
+
+  .font-primary {
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .font-secondary {
+    font-family: "Geist", sans-serif;
+  }
+}
+
 body {
   margin: 0;
   min-width: 320px;
