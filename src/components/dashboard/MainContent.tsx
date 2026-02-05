@@ -15,7 +15,7 @@ export function MainContent() {
         <PersonalNotes />
 
         {/* AI-Generated Summary Card */}
-        <div className="flex flex-col h-full rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-[0_1px_1.75px_rgba(0,0,0,0.05)] overflow-hidden">
+        <div className="flex flex-col flex-1 h-full rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-[0_1px_1.75px_rgba(0,0,0,0.05)] overflow-hidden">
           {/* AI Header */}
           <div className="flex items-center justify-between gap-3 px-5 py-4 w-full">
             <div className="flex items-center gap-2">
