@@ -31,7 +31,7 @@ export function MainContent() {
             </div>
             <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[var(--color-primary-500)]">
               <Plus className="w-3.5 h-3.5 text-white" />
-              <span className="text-xs font-medium text-white">Add Event</span>
+              <span className="text-xs font-medium text-white">Añadir evento</span>
             </button>
           </div>
 
@@ -102,7 +102,7 @@ export function MainContent() {
           <div className="flex items-center justify-between gap-3 px-5 py-4 w-full">
             <div className="flex items-center gap-2">
               <List className="w-4 h-4 text-[var(--color-primary-500)]" />
-              <span className="text-sm font-semibold text-[#2D2D2D]">Upcoming Tasks</span>
+              <span className="text-sm font-semibold text-[#2D2D2D]">Próximas tareas</span>
             </div>
             <div className="flex items-center justify-center px-2 py-0.5 rounded-xl bg-[rgba(124,144,112,0.08)]">
               <span className="text-[11px] font-medium text-[var(--color-primary-500)]">3 pending</span>

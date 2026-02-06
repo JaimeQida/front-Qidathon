@@ -28,7 +28,7 @@ export function AISummaryCard({ caseId = "ABC-123" }: AISummaryCardProps) {
         <div className="flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-[#9B8AA8]" />
           <span className="text-sm font-semibold text-[#2D2D2D]">
-            Resumen generado por AINara
+            Resumen generado por Ainara
           </span>
         </div>
         <button
@@ -51,8 +51,8 @@ export function AISummaryCard({ caseId = "ABC-123" }: AISummaryCardProps) {
         <div className="flex flex-col gap-3 w-full p-5">
           {isLoading && (
             <div className="flex items-center justify-center gap-2 py-6">
-              <Loader2 className="w-5 h-5 animate-spin text-white" />
-              <span className="text-sm text-white">Cargando resumen...</span>
+              <Loader2 className="w-5 h-5 animate-spin text-[#2D2D2D]" />
+              <span className="text-sm text-[#2D2D2D]">Cargando resumen...</span>
             </div>
           )}
           {isError && (

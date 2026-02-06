@@ -83,7 +83,7 @@ export function Communication({ caseId = "ABC-123" }: { caseId?: string }) {
         sendMessageMutation.mutate({
             case_id: caseId,
             text: trimmed,
-            date: new Date().toISOString().slice(0, 10),
+            date: "2026-02-15:09:30:11",//new Date().toISOString().slice(0, 10),
             sender: EMISOR_NAME,
         })
     }
@@ -97,7 +97,7 @@ export function Communication({ caseId = "ABC-123" }: { caseId?: string }) {
                 <div className="flex items-center justify-between gap-3 px-5 py-4 w-full shrink-0">
                     <div className="flex items-center gap-2">
                         <MessageCircle className="w-4 h-4 text-[var(--color-primary-500)]" />
-                        <span className="text-sm font-semibold text-[#2D2D2D]">Family Communication</span>
+                        <span className="text-sm font-semibold text-[#2D2D2D]">Comunicación familiar</span>
                     </div>
                     <div className="flex items-center justify-center px-2 py-0.5 rounded-xl bg-[var(--color-primary-500)]">
                         <span className="text-[11px] font-semibold text-white">{badgeCount}</span>
