@@ -44,12 +44,12 @@ export function PersonalNotes({
   )
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-[0_1px_1.75px_rgba(0,0,0,0.05)] overflow-hidden">
+    <div className="flex min-h-0 flex-1 max-h-[400px] flex-col rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-[0_1px_1.75px_rgba(0,0,0,0.05)] overflow-hidden">
       {/* Header - fijo arriba */}
       <div className="flex shrink-0 items-center justify-between gap-3 px-5 py-4 w-full border-b border-transparent">
         <div className="flex items-center gap-2">
           <Pencil className="w-4 h-4 text-[var(--color-primary-500)]" />
-          <span className="text-sm font-semibold text-[#2D2D2D]">Personal Notes</span>
+          <span className="text-sm font-semibold text-[#2D2D2D]">Notas personales</span>
         </div>
         <span
           className={`text-[11px] ${saveMutation.isError ? "text-[var(--color-error-700)]" : "text-[var(--color-primary-500)]"}`}
