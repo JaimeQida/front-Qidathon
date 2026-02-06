@@ -61,7 +61,7 @@ export function AISummaryCard({ caseId = "ABC-123" }: AISummaryCardProps) {
             </p>
           )}
           {!isLoading && !isError && summary?.summary === null && (
-            <p className="text-sm text-white/90">No hay resumen disponible.</p>
+            <p className="text-sm text-[#2D2D2D]">No hay resumen disponible.</p>
           )}
           <p className="text-sm text-[#2D2D2D] whitespace-pre-line">
             {formatSummaryText((summary?.summary as string) ?? "")}
