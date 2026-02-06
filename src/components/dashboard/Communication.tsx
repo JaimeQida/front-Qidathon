@@ -48,6 +48,7 @@ export function Communication({ caseId = "ABC-123" }: { caseId?: string }) {
         queryKey: ["whatsapp-chats", caseId],
         queryFn: () => getWhatsAppChats(caseId),
         enabled: !!caseId,
+        refetchInterval: 1_000,
     })
 
     const sendMessageMutation = useMutation({

@@ -9,6 +9,7 @@ export interface Summary {
 export async function getSummary(caseId: string): Promise<Summary> {
   const { data } = await api.get<Summary>("/api/summary", {
     params: { case_id: caseId },
+    timeout: 30_000,
   })
   return data
 }
