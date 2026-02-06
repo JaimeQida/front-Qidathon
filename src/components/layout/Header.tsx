@@ -1,19 +1,19 @@
-// components/Header.tsx
-import { Heart, Phone, Video, FileText } from "lucide-react";
+import { Heart, Phone, Video, FileText } from "lucide-react"
+import { QidaLogo } from "./QidaLogo"
 
 interface AlertBadgeProps {
-  icon?: React.ReactNode;
-  text: string;
+  icon?: React.ReactNode
+  text: string
 }
 
 interface PatientHeaderProps {
-  initials: string;
-  name: string;
-  age: string;
-  alert?: AlertBadgeProps;
-  onAudioCall?: () => void;
-  onVideoCall?: () => void;
-  onViewPTI?: () => void;
+  initials: string
+  name: string
+  age: string
+  alert?: AlertBadgeProps
+  onAudioCall?: () => void
+  onVideoCall?: () => void
+  onViewPTI?: () => void
 }
 
 export function Header({
@@ -26,19 +26,56 @@ export function Header({
   onViewPTI,
 }: PatientHeaderProps) {
   return (
-    <header className="flex items-center justify-between w-full h-[80px] px-6 py-4 bg-white border-b border-[#E5E7EB]">
-      {/* Profile Section */}
-      <div className="flex items-center gap-4">
-        {/* Avatar */}
-        <div className="flex items-center justify-center w-12 h-12 rounded-[12px] bg-[var(--color-primary-500)]">
+    <header className="grid w-full grid-cols-3 items-center gap-4 h-[80px] px-6 py-4 bg-white border-b border-[#E5E7EB]">
+      {/* Logo - izquierda */}
+      <div className="flex items-center">
+        <QidaLogo
+          className="h-8 w-auto text-[var(--color-primary-500)]"
+          width={80}
+          height={34}
+        />
+      </div>
+
+      {/* Botones - centro */}
+      <div className="flex items-center justify-center gap-3">
+        <button
+          onClick={onAudioCall}
+          className="flex items-center gap-2 px-4 py-2.5 rounded-[10px] bg-white border border-[#E5E7EB] hover:bg-gray-50 transition-colors cursor-pointer"
+        >
+          <Phone className="w-4 h-4 text-[#6B6B6B]" />
+          <span className="text-[#2D2D2D] text-[13px] font-medium font-sans">
+            Air Call
+          </span>
+        </button>
+        <button
+          onClick={onVideoCall}
+          className="flex items-center gap-2 px-4 py-2.5 rounded-[10px] bg-white border border-[#E5E7EB] hover:bg-gray-50 transition-colors cursor-pointer"
+        >
+          <Video className="w-4 h-4 text-[#6B6B6B]" />
+          <span className="text-[#2D2D2D] text-[13px] font-medium font-sans">
+            Video Call
+          </span>
+        </button>
+        <button
+          onClick={onViewPTI}
+          className="flex items-center gap-2 px-5 py-[11px] rounded-[10px] bg-[var(--color-primary-500)] hover:bg-[#6B7F60] transition-colors cursor-pointer"
+        >
+          <FileText className="w-4 h-4 text-white" />
+          <span className="text-white text-[13px] font-medium font-sans">
+            Generate PTI
+          </span>
+        </button>
+      </div>
+
+      {/* Profile - derecha */}
+      <div className="flex items-center justify-end gap-4">
+        <div className="flex items-center justify-center w-12 h-12 rounded-[12px] bg-[var(--color-primary-500)] shrink-0">
           <span className="text-white text-lg font-semibold font-sans">
             {initials}
           </span>
         </div>
-
-        {/* Profile Info */}
-        <div className="flex flex-col gap-0.5">
-          <span className="text-[#2D2D2D] text-base font-semibold font-sans">
+        <div className="flex flex-col gap-0.5 min-w-0">
+          <span className="text-[#2D2D2D] text-base font-semibold font-sans truncate">
             {name}
           </span>
           <div className="flex items-center gap-3">
@@ -61,38 +98,6 @@ export function Header({
           </div>
         </div>
       </div>
-
-      {/* Action Buttons */}
-      <div className="flex items-center gap-3">
-        <button
-          onClick={onAudioCall}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-[10px] bg-white border border-[#E5E7EB] hover:bg-gray-50 transition-colors cursor-pointer"
-        >
-          <Phone className="w-4 h-4 text-[#6B6B6B]" />
-          <span className="text-[#2D2D2D] text-[13px] font-medium font-sans">
-            Air Call
-          </span>
-        </button>
-        <button
-          onClick={onAudioCall}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-[10px] bg-white border border-[#E5E7EB] hover:bg-gray-50 transition-colors cursor-pointer"
-        >
-          <Video className="w-4 h-4 text-[#6B6B6B]" />
-          <span className="text-[#2D2D2D] text-[13px] font-medium font-sans">
-            Video Call
-          </span>
-        </button>
-
-        <button
-          onClick={onVideoCall}
-          className="flex items-center gap-2 px-5 py-[11px] rounded-[10px] bg-[var(--color-primary-500)] hover:bg-[#6B7F60] transition-colors cursor-pointer"
-        >
-          <FileText className="w-4 h-4 text-white" />
-          <span className="text-white text-[13px] font-medium font-sans">
-            Generate PTI
-          </span>
-        </button>
-      </div>
     </header>
-  );
+  )
 }
