@@ -20,11 +20,11 @@ export function AddNoteArea({ onAddNote }: AddNoteAreaProps) {
       {/* Input Wrapper */}
       <div className="flex flex-col gap-1 flex-1">
         <label className="font-secondary text-[11px] font-medium text-[var(--muted-foreground)]">
-          Add a new note
+          Añadir nueva nota
         </label>
         <input
           type="text"
-          placeholder="Type your note here..."
+          placeholder="Escribe tu nota aquí..."
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleClick()}
@@ -42,7 +42,7 @@ export function AddNoteArea({ onAddNote }: AddNoteAreaProps) {
       >
         <Plus className="w-4 h-4 text-[var(--primary-foreground)]" />
         <span className="font-secondary text-[13px] font-semibold text-[var(--secondary-500)]">
-          Add
+          Enviar
         </span>
       </button>
     </div>

@@ -65,7 +65,7 @@ export function PersonalNotes({
       </div>
 
       {/* Lista de notas - con scroll */}
-      <div className="min-h-0 flex-1 overflow-y-auto p-5">
+      <div className="min-h-0 max-h-[400px] flex-1 overflow-y-auto p-5">
         <NoteList notes={notes ?? []} isLoading={isLoading} />
       </div>
 
