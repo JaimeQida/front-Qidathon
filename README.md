@@ -1,4 +1,4 @@
-# front-Qidathon
+# Frontend Qidathon
 
 Frontend del proyecto Qidathon: dashboard (AINara Dashboard) para gestión de casos, comunicaciones, notas personales y resúmenes con IA.
 
@@ -73,6 +73,10 @@ El frontend espera un backend que exponga al menos:
 - `GET /api/summary` – resumen por `case_id` (timeout 30s)
 
 La base URL se configura con `VITE_API_BASE_URL`. Los errores de API se normalizan en el interceptor de Axios para mostrar mensajes amigables.
+
+##Screenshots
+<img width="1463" height="1288" alt="image" src="https://github.com/user-attachments/assets/57468352-daab-48b5-a1f3-60120c0cdc01" />
+
 
 ## Licencia
 
