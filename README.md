@@ -75,6 +75,7 @@ El frontend espera un backend que exponga al menos:
 La base URL se configura con `VITE_API_BASE_URL`. Los errores de API se normalizan en el interceptor de Axios para mostrar mensajes amigables.
 
 ##Screenshots
+
 <img width="1463" height="1288" alt="image" src="https://github.com/user-attachments/assets/57468352-daab-48b5-a1f3-60120c0cdc01" />
 
 
